@@ -11,7 +11,7 @@ exports.handler = async (event) => {
     if (fileType === 'application/pdf') {
         folder = 'pdfs/';
     }
-    else if (fileType === 'application/mp4') {
+    else if (fileType.indexOf("video") != -1) {
         folder = 'videos/';
     }
     else {
