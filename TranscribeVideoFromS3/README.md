@@ -1,4 +1,4 @@
-## GetPresignedPostData
+## TranscribeVideoFromS3
 The purpose of this lambda function is to [initiate a transcription process](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job) on an uploaded video using the AWS Transcription Service. It assumes the uploaded video is in English and is triggered by an upload to the `videos/` folder in the S3 bucket.
 
 ### Setup
