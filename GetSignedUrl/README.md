@@ -1,4 +1,4 @@
-## GetPresignedPostData
+## GetSignedUrl
 The purpose of this lambda function is to retrieve a URL from AWS, which will be used to directly upload content. This pattern is described [here](https://aws.amazon.com/blogs/compute/uploading-to-amazon-s3-directly-from-a-web-or-mobile-application/).
 
 ### Setup

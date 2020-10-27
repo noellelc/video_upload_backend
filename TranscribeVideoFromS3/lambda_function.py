@@ -12,7 +12,7 @@ def lambda_handler(event, context):
         object_url = 'https://s3.amazonaws.com/{0}/{1}'.format(file_bucket, file_name)
             
         response = transcribe.start_transcription_job(
-            TranscriptionJobName=file_name.replace('/',''),
+            TranscriptionJobName=file_name[7:], # remove 'videos/' from file_name 
             LanguageCode='en-US',
             Media={
                 'MediaFileUri': object_url
